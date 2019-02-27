@@ -9,7 +9,7 @@
     "seed": "node ./database/seed.js",
     "build": "webpack -d --watch",
     "start": "nodemon ./server/index.js",
-    "test": "mocha --recursive test"
+    "test": "mocha --recursive test --exit"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -20,7 +20,6 @@
     "mongodb": "^3.1.13",
     "mongodb-schema": "^8.2.3",
     "mongoose": "^5.4.10",
-    "nodemon": "^1.18.10",
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
   },
