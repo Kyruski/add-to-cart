@@ -14,4 +14,3 @@ before_script:
   - nohup node ./server/index.js &
 scripts:
   - npm test
-# let's try once more
