@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/../dist"));
 app.get("/api/getAll/:id", function (req, res) {
     var reqId = req.params.id;
-    db("testinsert")
+    db("prices")
         .select()
         .where("id", "" + reqId)
         .then(function (data) {

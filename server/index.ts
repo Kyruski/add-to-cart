@@ -11,7 +11,7 @@ app.use(express.static(__dirname + "/../dist"));
 
 app.get("/api/getAll/:id", (req: any, res: any) => {
   let reqId: string = req.params.id;
-  db("testinsert")
+  db("prices")
     .select()
     .where("id", `${reqId}`)
     .then((data: object) => {
