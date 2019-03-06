@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+require("newrelic");
 var express = require("express");
 var compression = require("compression");
 var cors = require("cors");

@@ -6,3 +6,5 @@ dist/bundle.js
 dist/bundle.js.gz
 database/seeding/seedingfile.csv
 database/seeding/seedingfile.json
+newrelic_agent.log
+newrelic.js

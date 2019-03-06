@@ -14,8 +14,7 @@
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./server/index.ts",
     "prod": "tsc && node ./build/app.js",
-    "build": "docker build -t kyruski/add-to-cart-service .",
-    "push": "docker push kyruski/add-to-cart-service"
+    "docker": "docker build -t kyruski/add-to-cart-service . && docker push kyruski/add-to-cart-service"
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
@@ -41,6 +40,7 @@
     "faker": "^4.1.0",
     "knex": "^0.16.3",
     "mocha": "^6.0.2",
+    "newrelic": "^5.6.0",
     "pg": "^7.8.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",

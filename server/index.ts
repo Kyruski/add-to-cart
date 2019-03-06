@@ -1,3 +1,4 @@
+require("newrelic");
 import express = require("express");
 import compression = require("compression");
 import cors = require("cors");

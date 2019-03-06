@@ -78,7 +78,8 @@ class App extends React.Component {
       .catch((err) => console.log('oh no there was an error in Axios request', err))
     }, false);
 
-    Axios.get('/api/product/1')
+    let id = Math.floor(Math.random() * 10000000) + 1;
+    Axios.get(`/api/product/${id}`)
     .then(data => {
       console.log(data, "this is the data we are looking for ")
       this.setState({
